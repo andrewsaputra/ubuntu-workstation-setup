@@ -5,6 +5,7 @@ wget -O /tmp/terraform11.zip https://releases.hashicorp.com/terraform/0.11.14/te
 mkdir -p ~/.terraform/0.11.14
 unzip /tmp/terraform11.zip -d ~/.terraform/0.11.14/
 sudo ln -s ~/.terraform/0.11.14/terraform /usr/local/bin/terraform
+sudo gem install terraform_landscape
 
 
 extraPaths=""
