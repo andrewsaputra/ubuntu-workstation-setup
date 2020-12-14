@@ -55,8 +55,8 @@ echo "export PATH=$PATH$extraPaths" >> ~/.bashrc
 
 
 # install session manager plugin
-curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb"
-sudo dpkg -i session-manager-plugin.deb
+curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "/tmp/session-manager-plugin.deb"
+sudo dpkg -i /tmp/session-manager-plugin.deb
 
 printf "\nReload terminal or run \"source ~/.bashrc\" to reload environment variables.
 After that, run \"aws configure\" to do basic aws configuration\n"
