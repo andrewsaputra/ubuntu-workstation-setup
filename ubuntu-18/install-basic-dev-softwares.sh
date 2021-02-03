@@ -9,6 +9,7 @@ sudo pip3 install virtualenv
 
 sudo apt install -y curl
 sudo apt install -y php7.2 php7.2-dev php7.2-curl
+sudo apt install -y openjdk-8-jdk
 sudo apt install -y openjdk-11-jdk
 sudo apt install -y ruby
 
