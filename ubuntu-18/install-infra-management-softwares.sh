@@ -10,16 +10,6 @@ sudo gem install terraform_landscape
 
 extraPaths=""
 
-# ansible
-mkdir ~/.ansible
-cd ~/.ansible
-virtualenv .
-source bin/activate
-pip3 install ansible==2.5.8.0
-pip3 install boto3
-deactivate
-extraPaths="$extraPaths:~/.ansible/bin"
-
 
 # aws-google-auth
 mkdir ~/.aws-google-auth
