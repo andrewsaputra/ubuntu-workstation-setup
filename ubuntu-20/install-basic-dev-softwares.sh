@@ -7,6 +7,9 @@ sudo apt install -y python3-pip
 sudo -H pip3 install --upgrade pip
 sudo pip3 install virtualenv
 
+#for backward compatibility with some older projects which are not compatible with python3
+sudo apt -y install python2
+
 sudo apt install -y curl
 sudo apt install -y php7.4 php7.4-dev php7.4-curl
 sudo apt install -y openjdk-8-jdk
