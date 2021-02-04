@@ -16,7 +16,8 @@ mkdir ~/.aws-google-auth
 cd ~/.aws-google-auth
 virtualenv .
 source bin/activate
-pip3 install aws-google-auth
+# latest aws-google-auth version (0.0.37) is currently broken
+pip3 install aws-google-auth==0.0.36
 deactivate
 extraPaths="$extraPaths:~/.aws-google-auth/bin"
 
