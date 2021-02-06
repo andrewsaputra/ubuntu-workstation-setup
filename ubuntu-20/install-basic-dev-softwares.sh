@@ -15,6 +15,7 @@ sudo apt install -y php7.4 php7.4-dev php7.4-curl
 sudo apt install -y openjdk-8-jdk
 sudo apt install -y openjdk-11-jdk
 sudo apt install -y ruby
+sudo apt install -y alacarte
 
 
 # MongoDB 3.6
