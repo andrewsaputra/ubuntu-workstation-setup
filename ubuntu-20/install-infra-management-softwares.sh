@@ -1,10 +1,17 @@
 #!/bin/bash
 
 # terraform
+wget -O /tmp/terraform12.zip https://releases.hashicorp.com/terraform/0.12.30/terraform_0.12.30_linux_amd64.zip
+mkdir -p ~/.terraform/0.12.30
+unzip /tmp/terraform12.zip -d ~/.terraform/0.12.30/
+sudo ln -s ~/.terraform/0.11.14/terraform /usr/local/bin/terraform
+
+# for backward compatibility with older modules
 wget -O /tmp/terraform11.zip https://releases.hashicorp.com/terraform/0.11.14/terraform_0.11.14_linux_amd64.zip
 mkdir -p ~/.terraform/0.11.14
 unzip /tmp/terraform11.zip -d ~/.terraform/0.11.14/
-sudo ln -s ~/.terraform/0.11.14/terraform /usr/local/bin/terraform
+sudo ln -s ~/.terraform/0.11.14/terraform /usr/local/bin/terraform11
+
 sudo gem install terraform_landscape
 
 
