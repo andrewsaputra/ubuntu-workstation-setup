@@ -51,7 +51,7 @@ curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64
 sudo dpkg -i /tmp/session-manager-plugin.deb
 
 # go
-wget -O /tmp/golang.tar.gz https://go.dev/dl/go1.21.4.linux-amd64.tar.gz
+wget -O /tmp/golang.tar.gz https://go.dev/dl/go1.21.6.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf /tmp/golang.tar.gz
 echo 'export PATH="$PATH:/usr/local/go/bin"' >> ~/.bash_profile
 
