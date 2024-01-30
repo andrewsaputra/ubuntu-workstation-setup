@@ -71,6 +71,10 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-
 sudo apt update
 sudo apt install -y postgresql
 
+# erlang etc (for VerneMQ compilation)
+sudo snap install erlang
+sudo apt install -y libsnappy-dev libssl-dev
+
 # Kubernetes
 curl -Lo /tmp/kubectl "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 sudo install /tmp/kubectl /usr/local/bin/kubectl
